@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="responsive">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=League+Gothic&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="mycss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+    <!-- Navigation Bar -->
+    <script>
+        
+        const skillItems = document.querySelectorAll('.skill-item');
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.classList.add('show');
+            }, index * 300);
+            observer.unobserve(entry.target);
+            }
+        });
+        }, {
+        threshold: 0.2
+        });
+    
+        skillItems.forEach(item => observer.observe(item));
+    </script>
+  
+    <body>
+
+        <nav id="navbar" class="oblong-navbar">
+                <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Educations</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                </ul>
+        </nav>
+
+
+        <section id="about">
+            <div class="skills-container">
+                <img src="mypic.png" alt="Profile Picture" class="picture">
+
+                <div class="inbetweenname">
+                    <h1 class="name cepada">MERCADO</h1>
+                    <h1 class="name mercado">CEPADA</h1>
+                </div>
+
+                <h1 class="ransenadjust ransen">RANSEN</h1>
+                <h1 class="ransen1adjust">RANSEN</h1>
+
+                <p class="firstparagraph">
+                    &emsp;&ensp;Turning<br>
+                    &emsp;Challenges<br>
+                    into Opportunities
+                </p>
+
+                <p class="secondparagraph">
+                    An aspiring computer engineering student dedicated to continuous learning and delivering meaningful solutions. Motivated to push and create value in the world of technology.
+                </p>
+                <!-- Social Media-->
+                <a href="https://www.facebook.com/sencepada" alt="facebook" class="clickable-image">
+                    <img src="facebook.png" alt="facebook" class="facebook">
+                </a>
+
+                <a href="https://www.instagram.com/kiminosensen/" alt="instagram" class="clickable-image">
+                    <img src="instagram.png" alt="instagram" class="instagram">
+                </a>
+
+                <a href="https://www.tiktok.com/@kiminosensen" alt="tiktok" class="clickable-image">
+                    <img src="tiktok.png" alt="tiktok" class="tiktok">
+                </a>
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mercado.ransen@ue.edu" alt="gmail" class="clickable-image">
+                    <img src="gmail.png" alt="gmail" class="gmail">
+                </a>
+            </div>
+
+        </section>
+
+        <section id="skills">
+
+            <div class="skills-container">
+
+                <p class="skillname">MY EXPERTICE</p>
+                <p class="skillnamestroke">MY EXPERTICE</p>
+
+                <img src="skills.png" class="skilladjust">
+                    
+                <div class="skill-item">
+                        
+                    <!-- Network -->
+                    <p class="network">NETWORKING</p>  
+
+                        <div class="frame-container">
+                            <img src="pictureframe.png" alt="frame" class="pictureframe">
+                            <div class="black-box"></div>
+                        </div>
+
+                        <a href="#vlanModal" class="clickable-image" onclick="event.preventDefault(); document.getElementById('vlanModal').style.display='block';">
+                            <img src="vlan.png" alt="vlan" class="vlan">
+                            <span class="tooltip-text vlanplacement">VLAN Network</span>
+                        </a>
+
+                        <a href="#staticModal" class="clickable-image" onclick="event.preventDefault(); document.getElementById('staticModal').style.display='block';">
+                            <img src="static.png" alt="static" class="static">
+                            <span class="tooltip-text staticplacement">Static Network</span>
+                        </a>
+
+                        <a href="#javaModal" class="clickable-image" onclick="event.preventDefault(); document.getElementById('javaModal').style.display='block';">
+                            <img src="dynamic.png" alt="dynamic" class="dynamic">
+                            <span class="tooltip-text dynamicplacement">Dynamic Network</span>
+                        </a>
+
+                        <!-- Network Modal -->
+                        <div id="vlanModal" class="modal">
+                            <div class="modal-content">
+                                <a href="#skills" class="close" onclick="event.preventDefault(); this.closest('.modal').style.display='none';">&times;</a>
+                                <h2>VLAN Network</h2>
+                                <p>A VLAN (Virtual Local Area Network) is a network configuration that logically separates devices into different broadcast domains within the same physical network for better security and efficiency.</p>
+                            </div>
+                        </div>
+
+                        <div id="staticModal" class="modal">
+                            <div class="modal-content">
+                                <a href="#skills" class="close" onclick="event.preventDefault(); this.closest('.modal').style.display='none';">&times;</a>
+                                <h2>Static Network</h2>
+                                <p>A static network is a network with fixed configurations—such as manual IP addressing and routing—that do not change automatically, offering stability but less adaptability.</p>
+                            </div>
+                        </div>
+
+                        <div id="dynamicModal" class="modal">
+                            <div class="modal-content">
+                                <a href="#skills" class="close" onclick="event.preventDefault(); this.closest('.modal').style.display='none';">&times;</a>
+                                <h2>Dynamic Network</h2>
+                                <p>A dynamic network is a network that can automatically change its configuration, routes, and connections in response to conditions like traffic, failures, or mobility, ensuring efficient and reliable communication.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Language -->
+                    <div class="skill-item">
+
+                        <p class="network textadjust">PROGRAMMING</p>
+                        <div class="frame-container">
+                            <img src="pictureframe.png" alt="frame" class="pictureframe">
+                            <div class="black-box"></div>
+                        </div>
+
+                        <a href="#cplusModal" class="clickable-image" onclick="event.preventDefault(); document.getElementById('cplusModal').style.display='block';">
+                            <img  href="#skills" src="cplus.png" alt="cplus" class="cplus">
+                            <span class="tooltip-text cplusplacement">C++ Language</span>
+                        </a>
+
+                        <a href="#pythonModal" class="clickable-image" onclick="event.preventDefault(); document.getElementById('pythonModal').style.display='block';">
+                            <img src="python.png" alt="python" class="python">
+                            <span class="tooltip-text pythonplacement">Python Language</span>
+                        </a>
+ 
+                        <a href="#javaModal" class="clickable-image" onclick="event.preventDefault(); document.getElementById('javaModal').style.display='block';">
+                            <img src="java.png" alt="java" class="java">
+                            <span class="tooltip-text javaplacement">Java Language</span>
+                        </a>
+
+                        <!-- Language Modal -->
+                        <div id="cplusModal" class="modal">
+                            <div class="modal-content">
+                                <a href="#skills" class="close" onclick="event.preventDefault(); this.closest('.modal').style.display='none';">&times;</a>
+                                <h2>C++ Language</h2>
+                                <p>C++ is a high-performance, general-purpose programming language that supports both procedural and object-oriented programming.</p>
+                            </div>
+                        </div>
+
+                        <div href="#skills" id="pythonModal" class="modal">
+                            <div class="modal-content">
+                                <a href="#skills" class="close" onclick="event.preventDefault(); this.closest('.modal').style.display='none';">&times;</a>
+                                <h2>Python Language</h2>
+                                <p>Python is a high-level, interpreted programming language known for its simplicity, readability, and wide range of applications in web development, data science, automation, and more.</p>
+                            </div>
+                        </div>
+
+                        <div id="javaModal" class="modal">
+                            <div class="modal-content">
+                                <a href="#skills" class="close" onclick="event.preventDefault(); this.closest('.modal').style.display='none';">&times;</a>
+                                <h2>Java Language</h2>
+                                <p>Java is a versatile, object-oriented programming language designed for portability, reliability, and security, often used for web, desktop, and mobile applications.</p>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                    <!-- Circuits -->
+                    <div class="skill-item">
+                        <p class="network circuitadjust">CIRCUIT DESIGN</p>
+                        <div class="frame-container">
+                            <img src="pictureframe.png" alt="frame" class="pictureframe">
+                            <div class="black-box"></div>
+                        </div>
+
+                        <a href="#kmap" class="clickable-image">
+                            <img src="kmap.png" alt="kmap" class="kmap">
+                            <span class="tooltip-text kmapreplacement">Karnaugh Map</span>
+                        </a>
+    
+                        <a href="#gates" class="clickable-image">
+                            <img src="gates.png" alt="gates" class="gates">
+                            <span class="tooltip-text gatesreplacement">Logic Gates</span>
+                        </a>
+
+                        <a href="#segment" class="clickable-image">
+                            <img src="segment.png" alt="segment" class="segment">
+                            <span class="tooltip-text segmentreplacement">7 Segment Display</span>
+                        </a>
+
+                        <!-- Language Modal -->
+                        <div id="kmap" class="modal">
+                            <div class="modal-content">
+                                <a href="#skills" class="close" onclick="event.preventDefault(); this.closest('.modal').style.display='none';">&times;</a>
+                                <h2>K-Map</h2>
+                                <p>A Karnaugh Map (K-map) is a visual method for simplifying Boolean expressions by grouping adjacent 1s to minimize logic circuits.</p>
+                            </div>
+                        </div>
+                    
+                        <div id="gates" class="modal">
+                            <div class="modal-content">
+                                <a href="#skills" class="close" onclick="event.preventDefault(); this.closest('.modal').style.display='none';">&times;</a>
+                                <h2>Logic Gates</h2>
+                                <p>Logic gates are basic digital circuit building blocks that perform logical operations (AND, OR, NOT, NAND, NOR, XOR, XNOR) on binary inputs to produce a binary output.</p>
+                            </div>
+                        </div>
+                    
+                        <div id="segment" class="modal">
+                            <div class="modal-content">
+                                <a href="#skills" class="close" onclick="event.preventDefault(); this.closest('.modal').style.display='none';">&times;</a>
+                                <h2>7-Segment Display</h2>
+                                <p>A 7-segment display is an electronic display device made of seven LEDs arranged in a figure-eight pattern, used to show numbers and some letters.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        </section>
+
+        <section id="education">
+
+            <div class="skills-container">
+
+                <img src="education.png" class="school">
+                
+                <p class="schoolname">EDUCATION</p>
+
+                <p class="schoolnamestroke">EDUCATION</p>
+                
+                <div class="line skill-item"></div>
+                <div class="circles skill-item">
+                    <div class="circle" data-index="0"></div>
+                    <div class="circle" data-index="1"></div>
+                    <div class="circle" data-index="2"></div>
+                    <div class="circle" data-index="3"></div>
+                    <div class="circle" data-index="4"></div>
+                    <div class="circle" data-index="5"></div>
+    
+                </div> 
+
+                <div class="accordion-container skill-item">
+
+                    <div class="accordion-container skill-item">
+
+                        
+
+                        <div class="accordion-item">
+                            <img src="smarterkids.jpg" alt="Picture 1" class="pictureschool smarterkid">
+                            <button class="accordion-btn">SMARTER KIDDO ENHANCEMENT AND LEARNING CENTER INC.
+                                <span class="arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Kinder (2010-2011)</p>
+                            </div>
+                        </div>
+                    
+                        <div class="accordion-item">
+                            <img src="sunrays.jpg" alt="Picture 2" class="pictureschool sunrays">
+                            <button class="accordion-btn">SUNRAYS LEARNING CENTER, INC.
+                                <span class="arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Grade 1 (2011-2012)</p>
+                            </div>
+                        </div>
+                    
+                        <div class="accordion-item">
+                            <img src="cva.jpg" alt="Picture 3" class="pictureschool cva">
+                            <button class="accordion-btn">CELESTIA VILLAGE ACADEMY
+                                <span class="arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Grade 2-6 (2012-2017)</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <img src="apec.jpg" alt="Picture 3" class="pictureschool apec">
+                            <button class="accordion-btn">AFFORDABLE PRIVATE EDUCATION CENTER - MARIKINA HEIGHTS
+                            <span class="arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                            <p>Grade 7-10 (2017-2021)</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            
+                            <img src="tip.jpg" alt="Picture 4" class="pictureschool tip">
+                            
+                            <button class="accordion-btn">TECHNOLOGICAL INSTITUTE OF THE PHILIPPINES - QUEZON CITY
+                                <span class="arrow">&#9660;</span>
+                            </button>
+
+                            <div class="accordion-content">
+                                <p>Grade 11-12 (2021-2023)</p>
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-item">
+                            <img src="ue.jpg" alt="Picture 4" class="pictureschool ue">
+                            <button class="accordion-btn">UNIVERSITY OF THE EAST - MANILA
+                            <span class="arrow">&#9660;</span>
+                            </button>
+                            <div class="accordion-content">
+                            <p>COLLEGE 1ST YEAR - PRESENT (2021-2023)</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+
+                </div>
+                
+
+            </section>
+
+        </div>
+        
+        <section id="contacts">
+            <div >
+
+            </div>
+        </section>
+
+        
+
+        <script>
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".nav-links a");
+
+            window.addEventListener("scroll", () => {
+                let current = "";
+
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (pageYOffset >= sectionTop) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href") === "#" + current) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+        </script>
+
+        <script>
+            window.addEventListener("scroll", function () {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 100) { 
+                navbar.classList.add("sticky-right");
+            } else {
+                navbar.classList.remove("sticky-right");
+            }
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const skillItems = document.querySelectorAll('.skill-item');
+
+                const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('show');
+                    }, index * 300);
+                    observer.unobserve(entry.target);
+                    }
+                });
+                }, {
+                threshold: 0.2
+                });
+
+                skillItems.forEach(item => observer.observe(item));
+            });
+        </script>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const pictures = document.querySelectorAll('.pictureschool');
+            const circles = document.querySelectorAll('.circle');
+
+            // IntersectionObserver for scroll in/out of view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                const index = Array.from(pictures).indexOf(entry.target);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    if (circles[index]) circles[index].classList.add('active');
+                } else {
+                    entry.target.classList.remove('show');
+                    if (circles[index]) circles[index].classList.remove('active');
+                }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            pictures.forEach(picture => observer.observe(picture));
+
+            // Accordion circle exclusive toggle
+            const buttons = document.querySelectorAll('.accordion-btn');
+
+            buttons.forEach((button, index) => {
+                button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+
+                // If this accordion is already open, close it and return
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    button.classList.remove('active');
+                    if (circles[index]) circles[index].classList.remove('move-down');
+                    return;
+                }
+
+                // Close all other accordion contents
+                buttons.forEach((btn, i) => {
+                    const cont = btn.nextElementSibling;
+                    cont.style.maxHeight = null;
+                    btn.classList.remove('active');
+                    if (circles[i]) circles[i].classList.remove('move-down');
+                });
+
+                // Open the clicked accordion
+                content.style.maxHeight = content.scrollHeight + "px";
+                button.classList.add('active');
+                if (circles[index]) circles[index].classList.add('move-down');
+                });
+            });
+            });
+
+
+        </script>
+        
+
+    </body>
+</html>
