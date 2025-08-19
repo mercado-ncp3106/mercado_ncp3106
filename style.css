@@ -1,5 +1,5 @@
 /* Desktop  */
-@media (min-width: 1280px){ 
+@media (max-width: 1440px){ 
     html, body{
         scroll-behavior: smooth;
         background: linear-gradient(to right, black, white);
@@ -40,23 +40,35 @@
         font-style: normal;
     }
 
-    .ransenadjust, .ransen1adjust{
-        position: relative;
-        font-family: 'League Gotich', sans-serif;
-        font-size: 170px;
+    .ransenadjust{
+        position: absolute;
+        font-size: 8.85vw;
         transform: scaleY(2);
         z-index: 1;
         display: flex;
         justify-content: center; 
         align-items: center;     
-        margin-top: -63%;          
+        left: 30.5vw;
+        bottom: 34vw;        
         width: auto;          
         height: auto;      
     }
 
     .ransen1adjust{
+        position: absolute;
+        font-size: 8.85vw;
+        transform: scaleY(2);
+        z-index: 1;
+        display: flex;
+        font-family: 'League Gotich', sans-serif;
+        font-style: normal;
+        justify-content: center; 
+        align-items: center;     
+        left: 30.5vw;
+        bottom: 34vw;        
+        width: auto;          
+        height: auto;     
         color: transparent;
-        left: 21%;
         animation: fadeIn 5s ease-in forwards;
         -webkit-text-stroke: 3px #cca881;
         z-index: 3;
@@ -70,9 +82,9 @@
         transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
-        gap: 125%;
+        gap: 40vw;
         width: auto;
-        font-size: 500%;
+        font-size: 6vw;
         z-index: 10;
     }
 
@@ -81,33 +93,33 @@
     .facebook{
         position: absolute;
         transform: translate(-50%, -50%); 
-        width: 10vh;
-        top: -4vw;                
-        right: 17vw;   
+        width: 9vh;
+        top: 25vw;                  
+        left: -5vw; 
     }
 
     .instagram{
         position: absolute;
         transform: translate(-50%, -50%); 
-        width: 7vh;
-        top: -4vw;                
-        right: 14vw;   
+        width: 6vh;
+        top: 25vw;                  
+        left: -1vw;   
     }
 
     .tiktok{
         position: absolute;
         transform: translate(-50%, -50%);
-        width: 6.5vh;
-        top: -4vw;                  
-        right: 10vw; 
+        width: 5.5vh;
+        top: 25vw;                
+        left: 3vw; 
     }
 
     .gmail{
         position: absolute;
         transform: translate(-50%, -50%);
-        width: 8vh;
-        top: -4vw;                  
-        right: 4.5vw; 
+        width: 6vh;
+        top: 25vw;                      
+        left: 6.9vw; 
     }
 
     /* Navigation Bar*/
@@ -172,7 +184,7 @@
     
     #navbar.sticky-right .nav-links{
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 25px;
         padding: 20px 20px;
     }
 
@@ -186,26 +198,21 @@
     }
 
     /* Profile PIcture*/
-    .container-for-picture {
-        box-sizing: border-box;
-        width: 100%;
-
-        max-width: 900px;
-        margin: 0 auto; 
-    }
     
     .picture {
         display: block;
-        width: 51%;
+        width:61vw;
         height: auto;
+        align-items: center;
+        margin-left: 18vw;
         z-index: 2;
     }
 
     /* Paragraph*/
     .firstparagraph{
         position: absolute;
-        top: 56.5%; 
-        left: 34%;
+        top: 40.5vw; 
+        left: 490px;
         transform: translate(-50%, -50%); 
         font-size: clamp(35px, 6vw, 90px);
         color: white;
@@ -215,7 +222,6 @@
         width: 100%;
         max-width: 900px;
         padding: 0 10px;
-        word-wrap: break-word;
     }
 
    .secondparagraph{
@@ -261,7 +267,7 @@
     }
 
     #education{
-        height: 550vh;
+        height: 450vh;
         position: relative;
         overflow: hidden;
     }
@@ -299,8 +305,9 @@
     .skillname{
         position: absolute;
         animation: fadeIn 2s ease-in forwards;
-        top: -5vh;
-        font-size: 100px;
+        bottom: 50vw;
+        font-size: 5.2vw;
+        font-weight: bold;
         font-family: 'League Gotich', sans-serif;
         color: #cca881;
         transform: scaleY(2);
@@ -312,8 +319,9 @@
         font-family: 'League Gotich', sans-serif;
         -webkit-text-stroke: 2px #cca881;
         position: absolute;
-        top: -5vh;
-        font-size: 100px;
+        bottom: 50vw;
+        font-size: 5.2vw;
+        font-weight: bold;
         z-index: 3;
         transform: scaleY(2);
     }
@@ -321,68 +329,72 @@
     .skilladjust{
         position: absolute;
         width: auto;
-        height: 30vh;
-        top: 0vh;
+        height: auto;
+        bottom: 50vw;
         filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
     }
 
     .pictureframe{
+        position: relative;
         max-width: 30vw;
-        width: 100%;  
+        width: auto;  
         height: auto;
         display: block;
-        margin-top: 15vw;
+        margin-top: 400px;
 
     }
 
     .black-box{
         position: absolute;
-        top: 43%;    
+        top: 466px;    
         margin-left: 15.5%;   
         width: 100%; 
         max-width: 68.3%;
-        max-height: 40.2%;
+        max-height: 31.5%;
         height: 100%;
         background-color: black;
     }
 
     .vlan{
         position: absolute;
-        width: 150px;
-        top: -50vh;
-        right: -38vh;
+        width: auto;
+        max-width: 10vw;
+        bottom: 16vw;
+        left: 10vw;
     }
     
     .vlanplacement{
         position: absolute;
-        top: -31.5vh;
-        right: -34vh;
+        bottom: 14vw;
+        left: 12vw;
     }
 
     .static{
         position: absolute;
-        width: 140px;
-        top: -34vh;
-        right: -45vh;
+        width: auto;
+        max-width: 7.5vw;
+        bottom: 9vw;
+        left: 15vw;
     }
 
     .staticplacement{
         position: absolute;
-        top: -15.7vh;
-        right: -41.5vh;
+        bottom: 6.1vw;
+        left: 15.7vw;
     }
 
     .dynamic{
         position: absolute;
-        width: 150px;
-        top: -34vh;
-        right: -29vh;
+        width: auto;
+        max-width: 8vw;
+        bottom: 9vw;
+        left: 7vw;
     }
 
     .dynamicplacement{
         position: absolute;
-        top: -15vh;
-        right: -25.5vh;
+        bottom: 6.1vw;
+        left: 7.5vw;
     }
 
     .network{
@@ -390,99 +402,104 @@
         font-family: 'League Gotich', sans-serif;
         color: white;
         -webkit-text-stroke: 3px black;
-        top: 67.5vh;
-        right: 11vh;
-        font-size:5vh;
+        bottom: 1.5vw;
+        left: 6.5vw;
+        font-size: 2.5vw;
         font-weight: bold;
         z-index: 3;
     }
 
     .textadjust{
-        right: 8.5vh;
+        left: 5.5vw;
     }
 
     .circuitadjust{
-        right: 8vh;
-        top: 67.5vh;
+        left: 9.5vh;
         white-space: nowrap;
     }
 
     .cplus{
         position: absolute;
-        width: 80px;
-        top: -46vh;
-        right: -33vh;
+        width: auto;
+        max-width: 5vw;
+        bottom: 17vw;
+        left: 13vw;
     }
 
     .cplusplacement{
         position: absolute;
-        top: -31vh;
-        right: -34vh;
+        bottom: 13vw;
+        left: 13.3vw;
     }
 
     .python{
         position: absolute;
-        width: 80px;
-        top: -29vh;
-        right: -25vh;
+        width: auto;
+        max-width: 5vw;
+        bottom: 10.1vw;
+        left: 8vw;
     }
 
     .pythonplacement{
         position: absolute;
-        top: -15.5vh;
-        right: -25.5vh;
+        bottom: 7.1vw;
+        left: 8vw;
     }
 
     .java{
         position: absolute;
-        width: 110px;
-        top: -32vh;
-        right: -42vh;
+        width: auto;
+        max-width: 7vw;
+        bottom: 9.5vw;
+        left: 16vw;
     }
 
     .javaplacement{
         position: absolute;
-        top: -15vh;
-        right: -40.5vh;
+        bottom: 6.8vw;
+        left: 17.5vw;
     }
 
     .kmap{
         position: absolute;
-        width: 100px;
-        top: -45vh;
-        right: -33vh;
+        width: auto;
+        max-width: 5.5vw;
+        bottom: 17vw;
+        left: 12vw;
     }
 
     .kmapreplacement{
         position: absolute;
-        top: -29vh;
-        right: -33vh;
+        bottom: 14.2vw;
+        left: 13vw;
     }
 
     .gates{
         position: absolute;
-        width: 100px;
-        top: -30vh;
-        right: -25vh;
+        width: auto;
+        max-width: 6vw;
+        bottom: 9.5vw;
+        left: 8vw;
     }
 
     .gatesreplacement{
         position: absolute;
-        top: -16vh;
-        right: -22vh;
+        bottom: 7.8vw;
+        left: 9vw;
     }
 
     .segment{
         position: absolute;
-        width: 90px;
-        top: -29vh;
-        right: -42vh;
+        width: auto;
+        max-width: 4.5vw;
+        bottom: 10.5vw;
+        left: 16vw;
     }
 
     .segmentreplacement{
         position: absolute;
-        top: -15vh;
-        right: -43vh;
+        bottom: 7.5vw;
+        left: 15.6vw;
     }
 
     /* clickable */
@@ -541,8 +558,6 @@
         border-radius: 8px;
         position: relative;   
     }
-
-
 
     .close{
         position: absolute;
@@ -773,8 +788,8 @@
     .school{
         position: absolute;
         width: auto;
-        height: 30vh;
-        top: 14vh;
+        height: 15vw;
+        top: 5vw;
         filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
         z-index: 3;
     }
@@ -782,8 +797,8 @@
     .schoolname{
         position: absolute;
         animation: fadeIn 2s ease-in forwards;
-        top: 9vh;
-        font-size: 100px;
+        top: 4.5vw;
+        font-size: 5.2vw;
         font-family: 'League Gotich', sans-serif;
         color: #cca881;
         transform: scaleY(2);
@@ -795,26 +810,48 @@
         font-family: 'League Gotich', sans-serif;
         -webkit-text-stroke: 2px #cca881;
         position: absolute;
-        top: 9vh;
-        font-size: 100px;
+        top: 4.5vw;
+        font-size: 5.2vw;
+        z-index: 3;
+        transform: scaleY(2);
+    }
+
+    .project{
+        position: absolute;
+        animation: fadeIn 2s ease-in forwards;
+        bottom: 35vw;
+        font-size: 5.2vw;
+        font-family: 'League Gotich', sans-serif;
+        color: #cca881;
+        transform: scaleY(2);
+    }
+
+    .projectstroke{
+        animation: fadeIn 3s ease-in forwards;
+        color: transparent;
+        font-family: 'League Gotich', sans-serif;
+        -webkit-text-stroke: 2px #cca881;
+        position: absolute;
+        bottom: 35vw;
+        font-size: 5.2vw;
         z-index: 3;
         transform: scaleY(2);
     }
 
     .actfirst{
-        margin-left: 0.5vh;
+        margin-left: 0.3vw;
     }
 
     .card {
-        top: 40vh;
         position: relative;
+        top: 20vw;
         width: auto;
-        max-width: 200px;
+        max-width: 10vw;
         height: auto;
-        max-height: 200px;
+        max-height: 10vw;
         overflow: hidden;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        border-radius: 1vw;
+        box-shadow: 0 2vw 1vw rgba(0,0,0,0.2);
         background-color: black;
         opacity: 0;
         transform: translateY(50px);
@@ -824,8 +861,8 @@
     .projectadjust{
         position: absolute;
         width: auto;
-        height: 35vh;
-        top: -2vh;
+        height: 17vw;
+        bottom: 35vw;
         filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
     }
 
@@ -835,9 +872,9 @@
     }
 
     .card img {
-
-        width: 100%;
-        height: 100%;
+        width: auto;
+        max-width: 10vw;
+        height: auto;
         object-fit: cover;
         display: block;
         object-position: center;
@@ -859,16 +896,16 @@
     }
 
     .overlay p {
-    padding: 12px 28px;
-    border-radius: 50px;          
-    border: 2px solid #fff;
-    color: #fff;
-    font-family: 'League Gothic', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    background-color: rgba(0,0,0,0.3); 
-    transition: all 0.3s ease;
+        padding: 12px 28px;
+        border-radius: 50px;          
+        border: 2px solid #fff;
+        color: #fff;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.3); 
+        transition: all 0.3s ease;
     }
 
     .overlay p:hover {
@@ -898,32 +935,33 @@
     }
 
     .card-modal {
-    display: none; 
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    align-items: center;
-    justify-content: center;
+        display: none; 
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        align-items: center;
+        justify-content: center;
     }
 
     .card-modal-content {
-    background: #cca881;  padding: 20px;
-    border-radius: 12px;
-    max-width: 900px;
-    width: 80%;
-    max-height: 80vh;
-    overflow-y: auto;
+        background: #cca881;  padding: 2vw;
+        border-radius: 1vw;
+        max-width: 30vw;
+        width: auto;
+        max-height: 40vw;
+        height: auto;
+        overflow-y: auto;
     }
 
     .card-close {
         position: absolute;
-        top: 70px;
+        top: 6vw;
         font-weight: bold;
-        right: 250px;
+        left: 75vw;
         font-size: 28px;
         cursor: pointer;
     }
@@ -931,23 +969,25 @@
     .two-column {
         display: flex;
         flex-direction: row;
-        gap: 20px;
-        max-width: 900px;
+        gap: 2vw;
+        max-width: 50vw;
+        width: auto;
     }
 
     .card-carousel {
         position: relative;
         flex: 1;
-        max-width: 50%;
+        max-width: 50vw;
+        width: auto;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 2vw;
     }
 
     .card-carousel img {
         width: 70%;
         display: none;
-        border-radius: 10px;
-        margin-left: 8vh;
+        border-radius: 1vw;
+        margin-left: 3.5vw;
     }
 
     .card-carousel img.active {
@@ -984,17 +1024,16 @@
     }
 
     .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 10px;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    background: rgba(0,0,0,0.5);
-    border-radius: 50%;
-    transform: translateY(-50%);
-    user-select: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 10px;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        user-select: none;
     }
 
     .prev{ 
@@ -1006,76 +1045,76 @@
     }
 
     .card-details {
-    font-family: 'League Gotich', sans-serif;
-    flex: 1;
-    padding: 10px;
-    text-align: left;
+        font-family: 'League Gotich', sans-serif;
+        flex: 1;
+        padding: 10px;
+        text-align: left;
     }
 
     body.modal-open {
-    overflow: hidden;
+        overflow: hidden;
     }
 
     .contact-container {
-    background: #fff;
-    padding: 50px;
-    border-radius: 25px;
-    max-width: 700px;
-    width: 100%;
-    z-index: 999;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        background: #fff;
+        padding: 50px;
+        border-radius: 25px;
+        max-width: 700px;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
     .contact-container h2 {
-    font-family: 'League Gothic', sans-serif;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #333;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #333;
     }
 
     .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .contact-form label {
-    font-family: 'League Gothic', sans-serif;
-    font-size: 1rem;
-    color: #666;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 1rem;
+        color: #666;
     }
 
     .contact-form input,
     .contact-form textarea {
-    padding: 15px;
-    border-radius: 15px;
-    border: 1px solid #ddd;
-    font-size: 1rem;
-    outline: none;
-    transition: all 0.3s ease;
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #ddd;
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s ease;
     }
 
     .contact-form input:focus,
     .contact-form textarea:focus {
-    border-color: #cca881;
-    box-shadow: 0 0 10px rgba(204,168,129,0.3);
+        border-color: #cca881;
+        box-shadow: 0 0 10px rgba(204,168,129,0.3);
     }
 
     .contact-form textarea {
-    resize: none;
-    min-height: 150px;
+        resize: none;
+        min-height: 150px;
     }
 
     .contact-form button {
-    padding: 15px;
-    border: none;
-    border-radius: 25px;
-    background-color: #000;
-    color: #fff;
-    font-size: 1.1rem;
-    cursor: pointer;
-    font-family: 'League Gothic', sans-serif;
-    transition: all 0.3s ease;
+        padding: 15px;
+        border: none;
+        border-radius: 25px;
+        background-color: #000;
+        color: #fff;
+        font-size: 1.1rem;
+        cursor: pointer;
+        font-family: 'League Gothic', sans-serif;
+        transition: all 0.3s ease;
     }
 
     .contact-form button:hover {
@@ -1190,7 +1229,1234 @@
 }
 
 /* Specific phones only */
-@media (min-width: 360px) and (max-width: 780px) { 
+@media (max-width: 1024px) { 
+    html, body{
+        scroll-behavior: smooth;
+        background: linear-gradient(to right, black, white);
+        width: auto;
+
+    }
+    
+    /* Name */
+    .name1{
+        opacity: 0;
+        animation: fadeIn 2s ease-in forwards;
+        font-family: 'League Gothic', sans-serif;
+        font-style: normal;
+    }
+
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .cepada{
+        color: white;
+        margin: 0;
+    }
+
+    .mercado{
+        color: black;
+        margin: 0;
+    }
+
+    .ransen{
+        color: #cca881;
+        font-family: 'League Gotich', sans-serif;
+        font-style: normal;
+    }
+
+    .ransenadjust{
+        position: absolute;
+        font-size: 8.85vw;
+        transform: scaleY(2);
+        z-index: 1;
+        display: flex;
+        justify-content: center; 
+        align-items: center;     
+        left: 30.5vw;
+        bottom: 23vw;        
+        width: auto;          
+        height: auto;      
+    }
+
+    .ransen1adjust{
+        position: absolute;
+        font-size: 8.85vw;
+        transform: scaleY(2);
+        z-index: 1;
+        display: flex;
+        font-family: 'League Gotich', sans-serif;
+        font-style: normal;
+        justify-content: center; 
+        align-items: center;     
+        left: 30.5vw;
+        bottom: 23vw;        
+        width: auto;          
+        height: auto;     
+        color: transparent;
+        animation: fadeIn 5s ease-in forwards;
+        -webkit-text-stroke: 3px #cca881;
+        z-index: 3;
+
+    }
+
+    .inbetweenname{
+        position: absolute;
+        top: 32%;                
+        left: 48%;               
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        gap: 40vw;
+        width: auto;
+        font-size: 6vw;
+        z-index: 10;
+    }
+
+
+    /* Social Media */
+    .facebook{
+        position: absolute;
+        transform: translate(-50%, -50%); 
+        width: 10vh;
+        top: 18vw;                  
+        left: 0vw; 
+    }
+
+    .instagram{
+        position: absolute;
+        transform: translate(-50%, -50%); 
+        width: 7vh;
+        top: 18vw;                  
+        left: 2vw;   
+    }
+
+    .tiktok{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 6.5vh;
+        top: 18vw;                 
+        left: 4vw; 
+    }
+
+    .gmail{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 8vh;
+        top: 18vw;                  
+        left: 6vw; 
+    }
+
+    /* Navigation Bar*/
+    .oblong-navbar{
+        position: fixed;  
+        top: 0;
+        left: 0;
+        pointer-events: none; 
+        width: 100%;   
+        margin-top: 0;
+        z-index: 10;    
+        padding: 10px 0;  
+        display: flex;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .oblong-navbar a{
+        pointer-events: auto;
+    }
+    
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        background-color: rgba(204, 168, 129, 0.8); 
+        padding: 10px 50px;
+        border-radius: 50px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .nav-links li{
+        margin: 0 15px;
+    }
+    
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        padding: 8px 16px;
+        transition: 0.3s, color 0.3s;
+        border-radius: 25px;
+        font-family: 'League Gotich', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+    }
+    
+    .nav-links a:hover{
+        background-color: white;
+        color: black;
+    }
+
+    #navbar.sticky-right{
+        position: fixed;
+        top: 50px;
+        right: 20px;
+        left: auto;
+        z-index: 999;
+        justify-content: flex-end;
+    }
+    
+    #navbar.sticky-right .nav-links{
+        flex-direction: column;
+        border-radius: 25px;
+        padding: 20px 20px;
+    }
+
+    #navbar.sticky-right .nav-links li{
+        margin: 10px 0;
+    }
+    
+    #navbar.sticky-right .nav-links a{
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    /* Profile PIcture*/
+    
+    .picture {
+        display: block;
+        width: 47vw;
+        height: auto;
+        align-items: center;
+        margin-left: 25vw;
+        z-index: 2;
+    }
+
+    /* Paragraph*/
+    .firstparagraph{
+        position: absolute;
+        top: 56.5%; 
+        left: 34%;
+        transform: translate(-50%, -50%); 
+        font-size: clamp(35px, 6vw, 90px);
+        color: white;
+        font-family: 'League Gothic', sans-serif;
+        line-height: 1.5;
+        z-index: 10;
+        width: 100%;
+        max-width: 900px;
+        padding: 0 10px;
+        word-wrap: break-word;
+    }
+
+   .secondparagraph{
+        position: absolute;
+        top: 60%;
+        left: 73vw;             
+        transform: translateY(-50%); 
+        font-size: clamp(17px, 2.5vw, 44px);
+        color: black;
+        font-family: 'League Gothic', sans-serif;
+        z-index: 10;
+        width: auto;          
+        max-width: 900px;     
+        white-space: normal;
+        text-align: left;
+        padding: 0 10px;
+        box-sizing: border-box; 
+        word-wrap: break-word;
+    }
+    
+    #about{
+        position: relative;
+        overflow: hidden;
+    }
+
+    #projects{
+        position: relative;
+        overflow: hidden;   
+        min-height: 100vh;  
+        max-width: 100vw;     
+        margin: 0 auto;      
+        padding: 20px;    
+    }
+
+   #skills {
+        position: relative;
+        overflow: hidden;   
+        min-height: 100vh;  
+        max-width: 100vw;     
+        margin: 0 auto;      
+        padding: 20px;       
+
+    }
+
+    #education{
+        height: 450vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #contact{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+        box-sizing: border-box;
+    }
+
+    .skill-item{
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .skill-item.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+    .skills-container{
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        flex-wrap: wrap; 
+        padding: 50px 0;
+    }
+
+    /* blackbox*/
+    .skillname{
+        position: absolute;
+        animation: fadeIn 2s ease-in forwards;
+        bottom: 39.4vw;
+        font-size: 5.2vw;
+        font-family: 'League Gotich', sans-serif;
+        color: #cca881;
+        transform: scaleY(2);
+    }
+
+    .skillnamestroke{
+        animation: fadeIn 3s ease-in forwards;
+        color: transparent;
+        font-family: 'League Gotich', sans-serif;
+        -webkit-text-stroke: 2px #cca881;
+        position: absolute;
+        bottom: 39.4vw;
+        font-size: 5.2vw;
+        z-index: 3;
+        transform: scaleY(2);
+    }
+
+    .skilladjust{
+        position: absolute;
+        width: auto;
+        height: 15vw;
+        bottom: 40vw;
+        filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
+    }
+
+    .pictureframe{
+        max-width: 30vw;
+        width: auto;  
+        height: auto;
+        display: block;
+        margin-top: 15vw;
+
+    }
+
+    .black-box{
+        position: absolute;
+        top: 43%;    
+        margin-left: 15.5%;   
+        width: 100%; 
+        max-width: 68.3%;
+        max-height: 40.2%;
+        height: 100%;
+        background-color: black;
+    }
+
+    .vlan{
+        position: absolute;
+        width: auto;
+        max-width: 10vw;
+        bottom: 15vw;
+        left: 10vw;
+    }
+    
+    .vlanplacement{
+        position: absolute;
+        bottom: 14vw;
+        left: 12.8vw;
+    }
+
+    .static{
+        position: absolute;
+        width: auto;
+        max-width: 7.5vw;
+        bottom: 9vw;
+        left: 15vw;
+    }
+
+    .staticplacement{
+        position: absolute;
+        bottom: 7.1vw;
+        left: 16.5vw;
+    }
+
+    .dynamic{
+        position: absolute;
+        width: auto;
+        max-width: 8vw;
+        bottom: 9vw;
+        left: 7vw;
+    }
+
+    .dynamicplacement{
+        position: absolute;
+        bottom: 7.1vw;
+        left: 8.5vw;
+    }
+
+    .network{
+        position: absolute;
+        font-family: 'League Gotich', sans-serif;
+        color: white;
+        -webkit-text-stroke: 3px black;
+        bottom: 1.5vw;
+        left: 6.5vw;
+        font-size: 2.5vw;
+        font-weight: bold;
+        z-index: 3;
+    }
+
+    .textadjust{
+        left: 5.5vw;
+    }
+
+    .circuitadjust{
+        left: 9.5vh;
+        white-space: nowrap;
+    }
+
+    .cplus{
+        position: absolute;
+        width: auto;
+        max-width: 5vw;
+        bottom: 17vw;
+        left: 13vw;
+    }
+
+    .cplusplacement{
+        position: absolute;
+        bottom: 13vw;
+        left: 13.3vw;
+    }
+
+    .python{
+        position: absolute;
+        width: auto;
+        max-width: 5vw;
+        bottom: 10.1vw;
+        left: 8vw;
+    }
+
+    .pythonplacement{
+        position: absolute;
+        bottom: 7.1vw;
+        left: 8vw;
+    }
+
+    .java{
+        position: absolute;
+        width: auto;
+        max-width: 7vw;
+        bottom: 9.5vw;
+        left: 16vw;
+    }
+
+    .javaplacement{
+        position: absolute;
+        bottom: 6.8vw;
+        left: 17.5vw;
+    }
+
+    .kmap{
+        position: absolute;
+        width: auto;
+        max-width: 5.5vw;
+        bottom: 17vw;
+        left: 12vw;
+    }
+
+    .kmapreplacement{
+        position: absolute;
+        bottom: 14.2vw;
+        left: 13vw;
+    }
+
+    .gates{
+        position: absolute;
+        width: auto;
+        max-width: 6vw;
+        bottom: 9.5vw;
+        left: 8vw;
+    }
+
+    .gatesreplacement{
+        position: absolute;
+        bottom: 7.8vw;
+        left: 9vw;
+    }
+
+    .segment{
+        position: absolute;
+        width: auto;
+        max-width: 4.5vw;
+        bottom: 10.5vw;
+        left: 16vw;
+    }
+
+    .segmentreplacement{
+        position: absolute;
+        bottom: 7.5vw;
+        left: 15.6vw;
+    }
+
+    /* clickable */
+    .clickable-image{
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    .clickable-image:hover{
+        transform: translateY(-10px);
+    }
+
+    .clickable-image .tooltip-text{
+        position: absolute;
+        font-family: 'League Gothic', sans-serif;
+        transform: translateY(-50%);
+        background-color: white;
+        color: black;
+        padding: 8px 12px;
+        border-radius: 5px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease, left 0.3s ease;
+        z-index: 100;
+    }
+
+
+    .clickable-image:hover .tooltip-text{
+        opacity: 1;
+    }
+
+    .modal {
+        display: none;
+        position: absolute;
+        left: 66px; 
+        top: 37vh;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 22px;
+        z-index: 2;
+    }
+
+    .modal:target {
+        display: block;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 19px;
+        width: auto;         
+        max-width: 246px;   
+        height: auto;
+        max-height: 220px;
+        border-radius: 8px;
+        position: relative;   
+    }
+
+    .close{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: bold;
+        color: #000;
+        z-index: 4;
+    }
+
+    .line{
+        position: absolute;
+        width: 5px;
+        height: 3600px;
+        top: 50vh;
+        background-color: #cca881;
+    }
+
+    .tip, 
+    .cva, 
+    .smarterkid {
+        display: block; 
+        position: absolute; 
+        width: auto; 
+        height: auto; 
+        top: 50vh; 
+        left: -10vw;     
+    }
+
+    .ue,
+    .apec,
+    .sunrays {
+        display: block; 
+        position: absolute; 
+        width: auto; 
+        height: auto;
+        top: 50vh; right: -25vw;
+    }
+
+    .accordion-container{
+        max-width: 600px;
+        margin: 20px auto;
+    }
+      
+    .accordion-item{
+        margin-bottom: 20px;
+    }
+
+    .accordion-item .smarterkid + .accordion-btn,
+    .accordion-item .smarterkid + .accordion-btn + .accordion-content{
+        position: relative;
+        top: 36vh;
+        left: -10vw;
+    }
+
+    .accordion-item .sunrays + .accordion-btn,
+    .accordion-item .sunrays + .accordion-btn + .accordion-content{
+        position: relative;
+        top: 36vh;
+        left: 25vw;
+    }
+
+    .accordion-item .cva + .accordion-btn,
+    .accordion-item .cva + .accordion-btn + .accordion-content{
+        position: relative;
+        top: 36vh;
+        left: -10vw;
+    }
+
+    .accordion-item .apec + .accordion-btn,
+    .accordion-item .apec + .accordion-btn + .accordion-content{
+        position: relative;
+        top: 36vh;
+        right: -25vw;
+    }
+
+    .accordion-item .tip + .accordion-btn,
+    .accordion-item .tip + .accordion-btn + .accordion-content{
+        position: relative;
+        top: 36vh;
+        left: -10vw;
+    }
+
+    .accordion-item .ue + .accordion-btn,
+    .accordion-item .ue + .accordion-btn + .accordion-content{
+        position: relative;
+        top: 36vh;
+        right: -25vw;
+    }
+
+    .circles{ 
+        position: absolute; 
+        top: 60vh;  
+        width: 30px; 
+        height: 3600px; 
+        pointer-events: none; 
+    } 
+
+    .circle{ 
+        position: absolute; 
+        transform: translate(-50%, 0); 
+        left: 15px; 
+        width: 20px; 
+        height: 20px; 
+        background-color: #cca881; 
+        border-radius: 50%; 
+        opacity: 0; 
+        transition: opacity 0.5s ease, transform 0.3s ease; 
+    } 
+
+    .circle:nth-child(1){ 
+        top: 6%; 
+    }
+    
+    .circle:nth-child(2){ 
+        top: 22%; 
+    }
+    
+    .circle:nth-child(3){ 
+        top: 38%; 
+    }
+    
+    .circle:nth-child(4){ 
+        top: 53%; 
+    }
+    
+    .circle:nth-child(5){ 
+        top: 70%; 
+    }
+    
+    .circle:nth-child(6){ 
+        top: 85%; 
+    }
+
+    .circle.active { 
+        opacity: 1; 
+    }
+
+    .circle.move-down { 
+        transform: translateX(-50%) translateY(50px); 
+    }
+
+
+    .pictureschool {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+      
+    .accordion-btn {
+        background-color: #cca881;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border: none;
+        width: 67%;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 20px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: none;
+        transition: background-color 0.3s ease;
+    }
+      
+    .accordion-btn.active {
+        background-color: #b28a6a;
+    }
+      
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        background-color: #f5f5f5;
+        padding: 0 15px;
+        border-radius: 0 0 5px 5px;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 20px;
+        width: 62%;
+        text-align: center;
+        color: #333;
+    }
+
+    .accordion-btn .arrow {
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+      
+      .accordion-btn.active .arrow {
+        transform: rotate(180deg);
+    }
+
+    .pictureschool {
+        max-width: 400px;
+        width: 100%;
+        margin: 100px auto;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(204,168,129,0.7);
+        position: relative;
+    }
+      
+    .pictureschool.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+      
+    .pictureschool:nth-child(odd) {
+        margin-left: 0;
+        margin-right: auto;
+        float: left;
+        clear: both;
+    }
+      
+    .pictureschool:nth-child(even) {
+        margin-left: auto;
+        margin-right: 0;
+        float: right;
+        clear: both;
+    }
+
+    .school{
+        position: absolute;
+        width: auto;
+        height: 15vw;
+        top: 5vw;
+        filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
+        z-index: 3;
+    }
+
+    .schoolname{
+        position: absolute;
+        animation: fadeIn 2s ease-in forwards;
+        top: 4.5vw;
+        font-size: 5.2vw;
+        font-family: 'League Gotich', sans-serif;
+        color: #cca881;
+        transform: scaleY(2);
+    }
+
+    .schoolnamestroke{
+        animation: fadeIn 3s ease-in forwards;
+        color: transparent;
+        font-family: 'League Gotich', sans-serif;
+        -webkit-text-stroke: 2px #cca881;
+        position: absolute;
+        top: 4.5vw;
+        font-size: 5.2vw;
+        z-index: 3;
+        transform: scaleY(2);
+    }
+
+    .project{
+        position: absolute;
+        animation: fadeIn 2s ease-in forwards;
+        bottom: 35vw;
+        font-size: 5.2vw;
+        font-family: 'League Gotich', sans-serif;
+        color: #cca881;
+        transform: scaleY(2);
+    }
+
+    .projectstroke{
+        animation: fadeIn 3s ease-in forwards;
+        color: transparent;
+        font-family: 'League Gotich', sans-serif;
+        -webkit-text-stroke: 2px #cca881;
+        position: absolute;
+        bottom: 35vw;
+        font-size: 5.2vw;
+        z-index: 3;
+        transform: scaleY(2);
+    }
+
+    .actfirst{
+        margin-left: 0.3vw;
+    }
+
+    .card {
+        position: relative;
+        top: 20vw;
+        width: auto;
+        max-width: 10vw;
+        height: auto;
+        max-height: 10vw;
+        overflow: hidden;
+        border-radius: 1vw;
+        box-shadow: 0 2vw 1vw rgba(0,0,0,0.2);
+        background-color: black;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .projectadjust{
+        position: absolute;
+        width: auto;
+        height: 17vw;
+        bottom: 35vw;
+        filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
+    }
+
+    .card.show {
+    opacity: 1;
+    transform: translateY(0);
+    }
+
+    .card img {
+        width: auto;
+        max-width: 10vw;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        object-position: center;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .overlay p {
+        padding: 12px 28px;
+        border-radius: 50px;          
+        border: 2px solid #fff;
+        color: #fff;
+        font-family: 'League Gothic', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.3); 
+        transition: all 0.3s ease;
+    }
+
+    .overlay p:hover {
+        background-color: #cca881;    
+        color: #000;                 
+        transform: scale(1.1);        
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    .overlay p::after {
+        content: "";
+        display: block;
+        margin: 6px auto 0;
+        width: 0;
+        height: 2px;
+        background: #fff;
+        transition: width 0.3s ease;
+    }
+
+    .overlay p:hover::after {
+        width: 60%;
+        background: #000;
+    }
+
+    .card:hover .overlay {
+        opacity: 1;
+    }
+
+    .card-modal {
+        display: none; 
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-modal-content {
+        background: #cca881;  padding: 2vw;
+        border-radius: 1vw;
+        max-width: 30vw;
+        width: auto;
+        max-height: 40vw;
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .card-close {
+        position: absolute;
+        top: 6vw;
+        font-weight: bold;
+        left: 75vw;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .two-column {
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        max-width: 50vw;
+        width: auto;
+    }
+
+    .card-carousel {
+        position: relative;
+        flex: 1;
+        max-width: 50vw;
+        width: auto;
+        overflow: hidden;
+        border-radius: 2vw;
+    }
+
+    .card-carousel img {
+        width: 70%;
+        display: none;
+        border-radius: 1vw;
+        margin-left: 3.5vw;
+    }
+
+    .card-carousel img.active {
+        display: block;
+        animation: slideIn 0.6s ease forwards;
+    }
+
+    .card-carousel img.exit {
+        display: block;
+        animation: slideOut 0.6s ease forwards;
+    }
+
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+            opacity: 0.5;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        to {
+            transform: translateX(-100%);
+            opacity: 0.5;
+        }
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 10px;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        user-select: none;
+    }
+
+    .prev{ 
+        left: 10px; 
+    }
+
+    .next{
+        right: 10px; 
+    }
+
+    .card-details {
+        font-family: 'League Gotich', sans-serif;
+        flex: 1;
+        padding: 10px;
+        text-align: left;
+    }
+
+    body.modal-open {
+        overflow: hidden;
+    }
+
+    .contact-container {
+        background: #fff;
+        padding: 50px;
+        border-radius: 25px;
+        max-width: 700px;
+        width: 100%;
+        z-index: 999;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .contact-container h2 {
+        font-family: 'League Gothic', sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-form label {
+        font-family: 'League Gothic', sans-serif;
+        font-size: 1rem;
+        color: #666;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 15px;
+        border-radius: 15px;
+        border: 1px solid #ddd;
+        font-size: 1rem;
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: #cca881;
+        box-shadow: 0 0 10px rgba(204,168,129,0.3);
+    }
+
+    .contact-form textarea {
+        resize: none;
+        min-height: 150px;
+    }
+
+    .contact-form button {
+        padding: 15px;
+        border: none;
+        border-radius: 25px;
+        background-color: #000;
+        color: #fff;
+        font-size: 1.1rem;
+        cursor: pointer;
+        font-family: 'League Gothic', sans-serif;
+        transition: all 0.3s ease;
+    }
+
+    .contact-form button:hover {
+        background-color: #cca881;
+        color: #000;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    footer *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    footer{
+        box-sizing: border-box;
+        background-color: #cca881;
+    }
+
+    .footerContainer{
+        width: 100%;
+        padding: 70px 30px 20px;
+    }
+
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .socialIcons a{
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+
+    .socialIcons a i{
+        font-size: 2em;
+        color: black;
+        opacity: 0.9;
+    }
+
+    .socialIcons a:hover{
+        background-color: black;
+        transition: 0.5s;
+    }
+
+    .socialIcons a:hover i{
+        color: white;
+        transition: 0.5s;
+    }
+
+    .footerNav{
+        margin: 30px 0;
+    }
+
+    .footerNav ul{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .footerNav ul li a{
+        color: white;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+
+    .footerNav ul li a:hover{
+        opacity: 1;
+    }
+
+    .footerBottom{
+        background-color:#cca881;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footerBottom p{
+        color: white;
+    }
+
+    .designer{
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+    }
+
+
+
+    .gmailphone,
+    .tiktokphone,
+    .instagramphone,
+    .facebookphone,
+    .hamburger,
+    .pictureframe1,
+    .pictureframe2,
+    .pictureframe3,
+    .black-box3,
+    .black-box2,
+    .black-box1{
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px){
     html, body {
         scroll-behavior: smooth;
         background: linear-gradient(to right, black, white);
@@ -1984,6 +3250,29 @@
         filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
     }
 
+    .project{
+        position: absolute;
+        animation: fadeIn 2s ease-in forwards;
+        top: 4vw;
+        font-size: 50px;
+        font-family: 'League Gotich', sans-serif;
+        color: #cca881;
+        transform: scaleY(2);
+        
+    }
+
+    .projectstroke{
+        animation: fadeIn 3s ease-in forwards;
+        color: transparent;
+        font-family: 'League Gotich', sans-serif;
+        -webkit-text-stroke: 2px #cca881;
+        position: absolute;
+        top: 4vw;
+        font-size: 50px;
+        z-index: 3;
+        transform: scaleY(2);
+    }
+
     .projecttext{
         margin-left: 6%;
     }
@@ -2328,5 +3617,4 @@
         margin: 10px;
 
     }
-
 }
