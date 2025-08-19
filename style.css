@@ -41,7 +41,7 @@
     }
 
     .ransenadjust, .ransen1adjust{
-        position: relative;
+        position: absolute;
         font-family: 'League Gotich', sans-serif;
         font-size: 170px;
         transform: scaleY(2);
@@ -2329,5 +2329,6 @@
         margin: 10px;
 
     }
+
 
 }
