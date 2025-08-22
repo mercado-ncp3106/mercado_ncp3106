@@ -608,7 +608,8 @@
         position: absolute; 
         width: auto; 
         height: auto;
-        top: 50vh; right: -25vw;
+        top: 50vh; 
+        right: -25vw;
     }
 
     .accordion-container{
