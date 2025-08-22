@@ -345,11 +345,11 @@
 
     .black-box{
         position: fixed;
-        margin-top: -84%;
+        margin-top: -25.5vw;
         margin-left: 15.5%;
         width: 100vw;
         height: 100vw;
-        max-width: 68.3%;
+        max-width: 20.5vw;
         max-height: 18.5vw;
         background-color: black;
     }
