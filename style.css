@@ -341,17 +341,16 @@
         height: auto;
         display: block;
         margin-top: 400px;
-
     }
 
     .black-box{
-        position: absolute;
-        top: 466px;    
-        margin-left: 15.5%;   
-        width: 100%; 
-        max-width: 68.3%;
-        max-height: 31.5%;
+        position: fixed;
+        margin-top: -84%;
+        margin-left: 15.5%;
+        width: 100%;
         height: 100%;
+        max-width: 68.3%;
+        max-height: 18.5vw;
         background-color: black;
     }
 
@@ -365,8 +364,9 @@
     
     .vlanplacement{
         position: absolute;
-        bottom: 14vw;
-        left: 12vw;
+        top: -16.5vw;
+        left: 11.6vw;
+        font-size: 1.2vw;
     }
 
     .static{
@@ -379,8 +379,9 @@
 
     .staticplacement{
         position: absolute;
-        bottom: 6.1vw;
-        left: 15.7vw;
+        top: -8.7vw;
+        left: 15.5vw;
+        font-size: 1.2vw;
     }
 
     .dynamic{
@@ -393,8 +394,9 @@
 
     .dynamicplacement{
         position: absolute;
-        bottom: 6.1vw;
+        top: -8.7vw;
         left: 7.5vw;
+        font-size: 1.2vw;
     }
 
     .network{
@@ -402,7 +404,7 @@
         font-family: 'League Gotich', sans-serif;
         color: white;
         -webkit-text-stroke: 3px black;
-        bottom: 1.5vw;
+        bottom: 2vw;
         left: 6.5vw;
         font-size: 2.5vw;
         font-weight: bold;
@@ -410,11 +412,12 @@
     }
 
     .textadjust{
-        left: 5.5vw;
+        left: 5vw;
     }
 
     .circuitadjust{
-        left: 9.5vh;
+        left: 4.7vw;
+        bottom: 2vw;
         white-space: nowrap;
     }
 
@@ -428,8 +431,9 @@
 
     .cplusplacement{
         position: absolute;
-        bottom: 13vw;
-        left: 13.3vw;
+        top: -15.4vw;
+        left: 12.2vw;
+        font-size: 1.2vw;
     }
 
     .python{
@@ -438,12 +442,14 @@
         max-width: 5vw;
         bottom: 10.1vw;
         left: 8vw;
+        
     }
 
     .pythonplacement{
         position: absolute;
-        bottom: 7.1vw;
-        left: 8vw;
+        top: -8.7vw;
+        left: 6.8vw;
+        font-size: 1.2vw;
     }
 
     .java{
@@ -456,8 +462,9 @@
 
     .javaplacement{
         position: absolute;
-        bottom: 6.8vw;
-        left: 17.5vw;
+        top: -8.5vw;
+        left: 16.5vw;
+        font-size: 1.2vw;
     }
 
     .kmap{
@@ -470,8 +477,9 @@
 
     .kmapreplacement{
         position: absolute;
-        bottom: 14.2vw;
-        left: 13vw;
+        top: -15.7vw;
+        left: 12vw;
+        font-size: 1.2vw;
     }
 
     .gates{
@@ -484,8 +492,9 @@
 
     .gatesreplacement{
         position: absolute;
-        bottom: 7.8vw;
-        left: 9vw;
+        top: -9vw;
+        left: 8vw;
+        font-size: 1.2vw;
     }
 
     .segment{
@@ -498,8 +507,9 @@
 
     .segmentreplacement{
         position: absolute;
-        bottom: 7.5vw;
-        left: 15.6vw;
+        top: -9vw;
+        left: 14.5vw;
+        font-size: 1.2vw;
     }
 
     /* clickable */
@@ -537,11 +547,15 @@
     .modal {
         display: none;
         position: absolute;
-        left: 66px; 
-        top: 37vh;
         font-family: 'League Gothic', sans-serif;
-        font-size: 22px;
+        font-size: 1.4vw;
         z-index: 2;
+        margin-top: -88%;
+        margin-left: 15.5%;
+        width: 100%;
+        height: 100%;
+        max-width: 68.3%;
+        max-height: 18.5vw;
     }
 
     .modal:target {
@@ -550,11 +564,9 @@
 
     .modal-content {
         background-color: white;
-        padding: 19px;
-        width: auto;         
-        max-width: 246px;   
-        height: auto;
-        max-height: 220px;
+        padding: 1.5vw;
+        width: 17.4vw;            
+        height: 15vw;
         border-radius: 8px;
         position: relative;   
     }
@@ -844,7 +856,7 @@
 
     .card {
         position: relative;
-        top: 20vw;
+        top: 40vw;
         width: auto;
         max-width: 10vw;
         height: auto;
@@ -862,7 +874,7 @@
         position: absolute;
         width: auto;
         height: 17vw;
-        bottom: 35vw;
+        bottom: 50vw;
         filter: drop-shadow(0 0 3px white) drop-shadow(0 0 3px white);
     }
 
@@ -882,7 +894,7 @@
 
     .overlay {
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
         height: 100%;
