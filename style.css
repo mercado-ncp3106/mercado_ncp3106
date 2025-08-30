@@ -178,7 +178,7 @@
         top: 50px;
         right: 20px;
         left: auto;
-        z-index: 999;
+        z-index: 1001;
         justify-content: flex-end;
     }
     
@@ -1298,7 +1298,7 @@
         justify-content: center; 
         align-items: center;     
         left: 30.5vw;
-        bottom: 23vw;        
+        bottom: 26vw;        
         width: auto;          
         height: auto;      
     }
@@ -1314,7 +1314,7 @@
         justify-content: center; 
         align-items: center;     
         left: 30.5vw;
-        bottom: 23vw;        
+        bottom: 26vw;        
         width: auto;          
         height: auto;     
         color: transparent;
@@ -1327,7 +1327,7 @@
     .inbetweenname{
         position: absolute;
         top: 32%;                
-        left: 48%;               
+        left: 49%;               
         transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
@@ -1339,36 +1339,36 @@
 
 
     /* Social Media */
-    .facebook{
+    .facebook {
         position: absolute;
-        transform: translate(-50%, -50%); 
-        width: 10vh;
-        top: 18vw;                  
-        left: 0vw; 
+        top: 16vh;       
+        left: -73vw;        
+        transform: translate(-50%, -50%);
+        width: clamp(40px, 8vw, 80px); 
     }
 
-    .instagram{
+    .instagram {
         position: absolute;
-        transform: translate(-50%, -50%); 
-        width: 7vh;
-        top: 18vw;                  
-        left: 2vw;   
+        top: 10.5vh;       
+        left: -76vw;        
+        transform: translate(-50%, -50%);
+        width: clamp(40px, 6vw, 80px); 
     }
 
     .tiktok{
         position: absolute;
+        top: 4vh;       
+        left: -78vw;        
         transform: translate(-50%, -50%);
-        width: 6.5vh;
-        top: 18vw;                 
-        left: 4vw; 
+        width: clamp(40px, 6.5vw, 80px); 
     }
 
     .gmail{
         position: absolute;
+        top: -2vh;       
+        left: -81vw;        
         transform: translate(-50%, -50%);
-        width: 8vh;
-        top: 18vw;                  
-        left: 6vw; 
+        width: clamp(40px, 6vw, 80px); 
     }
 
     /* Navigation Bar*/
@@ -1460,10 +1460,10 @@
     /* Paragraph*/
     .firstparagraph{
         position: absolute;
-        top: 56.5%; 
-        left: 34%;
+        top: 32.5vw; 
+        left: 55vw;
         transform: translate(-50%, -50%); 
-        font-size: clamp(35px, 6vw, 90px);
+        font-size: clamp(28px, 5vw, 60px);
         color: white;
         font-family: 'League Gothic', sans-serif;
         line-height: 1.5;
@@ -1471,7 +1471,6 @@
         width: 100%;
         max-width: 900px;
         padding: 0 10px;
-        word-wrap: break-word;
     }
 
    .secondparagraph{
