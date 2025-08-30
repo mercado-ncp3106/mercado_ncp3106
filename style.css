@@ -598,7 +598,7 @@
         width: auto; 
         height: auto; 
         top: 50vh; 
-        left: -10vw;     
+        left: -12vw;     
     }
 
     .ue,
@@ -609,7 +609,7 @@
         width: auto; 
         height: auto;
         top: 50vh; 
-        right: -25vw;
+        right: -31vw;
     }
 
     .accordion-container{
@@ -624,43 +624,43 @@
     .accordion-item .smarterkid + .accordion-btn,
     .accordion-item .smarterkid + .accordion-btn + .accordion-content{
         position: relative;
-        top: 36vh;
-        left: -10vw;
+        top: 39vh;
+        left: -12vw;
     }
 
     .accordion-item .sunrays + .accordion-btn,
     .accordion-item .sunrays + .accordion-btn + .accordion-content{
         position: relative;
-        top: 36vh;
-        left: 25vw;
+        top: 39vh;
+        left: 31vw;
     }
 
     .accordion-item .cva + .accordion-btn,
     .accordion-item .cva + .accordion-btn + .accordion-content{
         position: relative;
-        top: 36vh;
-        left: -10vw;
+        top: 39vh;
+        left: -12vw;
     }
 
     .accordion-item .apec + .accordion-btn,
     .accordion-item .apec + .accordion-btn + .accordion-content{
         position: relative;
-        top: 36vh;
-        right: -25vw;
+        top: 39vh;
+        left: 31vw;
     }
 
     .accordion-item .tip + .accordion-btn,
     .accordion-item .tip + .accordion-btn + .accordion-content{
         position: relative;
-        top: 36vh;
-        left: -10vw;
+        top: 39vh;
+        left: -12vw;
     }
 
     .accordion-item .ue + .accordion-btn,
     .accordion-item .ue + .accordion-btn + .accordion-content{
         position: relative;
-        top: 36vh;
-        right: -25vw;
+        top: 39vh;
+        left: 31vw;
     }
 
     .circles{ 
@@ -964,24 +964,23 @@
     }
 
     .card-modal-content {
-        position: relative;   /* make this the reference for children */
+        position: relative;  
         background: #cca881;
         padding: 2vw;
         border-radius: 1vw;
         max-width: 30vw;
-        width: 100%;          /* allow scaling */
+        width: 100%;          
         max-height: 40vw;
         height: auto;
         overflow-y: auto;
     }
     
-    /* Close button sticks to top-right of modal content */
     .card-close {
         position: absolute;
         top: 0.8vw;
         right: 0.8vw;
         font-weight: bold;
-        font-size: clamp(20px, 2vw, 28px); /* auto resize */
+        font-size: clamp(20px, 2vw, 28px); 
         cursor: pointer;
     }
     
