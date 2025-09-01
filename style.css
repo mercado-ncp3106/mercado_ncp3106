@@ -3810,7 +3810,7 @@ footer{
         position: fixed;
         display: block;
         top: 15px;
-        left: 10px;
+        left: 2vh;
         -webkit-text-stroke: 1px black;
         z-index: 999;
     }
@@ -3960,7 +3960,7 @@ footer{
     .skillname{
         position: absolute;
         animation: fadeIn 2s ease-in forwards;
-        top: 1vh;
+        top: 1vw;
         left: 10%;
         font-size: 50px;
         font-family: 'League Gotich', sans-serif;
