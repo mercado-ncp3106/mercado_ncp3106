@@ -3704,7 +3704,7 @@ footer{
         margin-top: 50.7%;
         width: auto;
         max-width: 150%;;
-        margin-left: -13vh;
+        margin-left: 0vh;
         height: auto;
         z-index: 2;
     }
@@ -3728,13 +3728,13 @@ footer{
     .ransenadjust, .ransen1adjust{
         position: relative;
         font-family: 'League Gotich', sans-serif;
-        font-size: 90px;
-        transform: scaleY(2);
+        font-size: 12vw;
+        transform: scaleY(2.5) translate(-50%, -50%);
         z-index: 1;
         display: flex;
         justify-content: center; 
         align-items: center;     
-        margin-top: -170%;          
+        margin-top: -75%;        
         width: 100%;          
         height: auto;      
     }
@@ -3745,17 +3745,16 @@ footer{
         animation: fadeIn 5s ease-in forwards;
         -webkit-text-stroke: 3px #cca881;
         z-index: 3;
-
     }
 
     .inbetweenname{
         position: absolute;
-        top: 32%;                
-        left: 48%;               
+        top: 40%;                
+        left: 50%;               
         transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
-        gap: 55%;
+        gap: 15%;
         font-size: 200%;
         z-index: 10;
     }
@@ -3815,9 +3814,6 @@ footer{
         z-index: 999;
     }
 
-    .oblong-navbar {
-        top: ;
-    }
 
 
     body.no-scroll {
