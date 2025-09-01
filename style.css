@@ -3704,7 +3704,7 @@ footer{
         margin-top: 50.7%;
         width: auto;
         max-width: 150%;;
-        margin-left: 0vh;
+        margin-left: 0vw;
         height: auto;
         z-index: 2;
     }
@@ -3734,7 +3734,7 @@ footer{
         display: flex;
         justify-content: center; 
         align-items: center;     
-        margin-top: -75%;        
+        margin-top: -75vw;        
         width: 100%;          
         height: auto;      
     }
@@ -3749,8 +3749,8 @@ footer{
 
     .inbetweenname{
         position: absolute;
-        top: 40%;                
-        left: 50%;               
+        top: 60vw;                
+        left: 50vw;               
         transform: translate(-50%, -50%);
         display: flex;
         justify-content: center;
