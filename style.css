@@ -3808,10 +3808,15 @@ footer{
         color: white;
         cursor: pointer;
         position: fixed;
+        display: block;
         top: 15px;
         left: 10px;
         -webkit-text-stroke: 1px black;
         z-index: 999;
+    }
+
+    .oblong-navbar {
+        top: ;
     }
 
 

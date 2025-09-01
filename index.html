@@ -38,11 +38,26 @@
 
     </script>
   
-    <body>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburger = document.querySelector('.hamburger');
+        const navL = document.querySelector('.nav-links');
+        const navb = document.querySelector('.oblong-navbar');
+        
+        hamburger.addEventListener('click', () => {
+            navL.classList.toggle('active');
+            navb.classList.toggle('active'); 
+            document.body.classList.toggle('no-scroll');
+        });
+    });
+    </script>
+    
+
+    <body aria-label class="windows" style="width: auto; height: auto;">
+
+        <div class="hamburger">&#9776;</div> 
 
         <nav id="navbar" class="oblong-navbar">
-
-            <span class="hamburger">&#9776;</span> 
                 
             <ul class="nav-links">
             
